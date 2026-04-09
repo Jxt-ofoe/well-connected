@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    turbo: {
-      root: process.cwd(),
-    },
-  },
+  // Configuration for production build
 };
 
 module.exports = nextConfig;
