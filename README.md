@@ -34,6 +34,7 @@ npm run dev
 ```
 
 **Default admin credentials:**
+
 - Email: `admin@wellconnected.com`
 - Password: `admin123`
 
@@ -82,26 +83,28 @@ well connected/
 
 ## API Endpoints
 
-| Method | Endpoint | Auth | Description |
-|--------|----------|------|-------------|
-| POST | `/api/admin/login` | — | Admin login |
-| GET | `/api/products` | — | List products |
-| GET | `/api/products/:id` | — | Product detail |
-| POST | `/api/products` | Admin | Create product |
-| PUT | `/api/products/:id` | Admin | Update product |
+| Method | Endpoint            | Auth  | Description    |
+| ------ | ------------------- | ----- | -------------- |
+| POST   | `/api/admin/login`  | —     | Admin login    |
+| GET    | `/api/products`     | —     | List products  |
+| GET    | `/api/products/:id` | —     | Product detail |
+| POST   | `/api/products`     | Admin | Create product |
+| PUT    | `/api/products/:id` | Admin | Update product |
 | DELETE | `/api/products/:id` | Admin | Delete product |
-| POST | `/api/orders` | — | Place order |
-| GET | `/api/orders` | Admin | List orders |
-| PUT | `/api/orders/:id` | Admin | Update status |
+| POST   | `/api/orders`       | —     | Place order    |
+| GET    | `/api/orders`       | Admin | List orders    |
+| PUT    | `/api/orders/:id`   | Admin | Update status  |
 
 ## Deployment
 
 ### Frontend (Vercel)
+
 1. Push frontend to GitHub
 2. Import repo in Vercel
 3. Set `NEXT_PUBLIC_API_URL` env var to your deployed backend URL
 
 ### Backend
+
 1. Deploy to Railway, Render, or Fly.io
 2. Set environment variables (Turso URL, token, JWT secret)
 3. Run `npm run seed` once to initialize the database
